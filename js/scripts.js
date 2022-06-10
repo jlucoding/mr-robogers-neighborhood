@@ -14,8 +14,13 @@ function noInputtedWord() {
 // Business logic
 
 function robogerSays(text) {
-  
+  let numbersArray = [];
+  for (let i=0; i <= text; i++) {
+    numbersArray.push(i);
+  }
+  return numbersArray;
 }
+
 
 
 
