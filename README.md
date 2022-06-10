@@ -4,6 +4,8 @@
 
 #### The web application simply takes a whole number that the user inputs and gives a response from Mr. Roboger.
 
+#### [Click here](https://github.com/jlucoding/mr-robogers-neighborhood.git) to check out the application on GitHub
+
 ## Technologies Used
 
 * HTML
