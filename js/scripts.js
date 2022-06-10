@@ -15,6 +15,10 @@ function noInputtedWord() {
 
 
 function robogerSays(text) {
+  if (noInputtedWord(text)) {
+    return "I do not understand your silence...";
+  }
+
   let numbersArray = [];
   for (let i=0; i <= parseInt(text); i++) {
     numbersArray.push(i.toString());
@@ -24,11 +28,11 @@ function robogerSays(text) {
       } else if (element.includes("2")) {
         numbersArray.splice(numbersArray.indexOf(element), 1, "Boop!");
       } else if (element.includes("1")) {
-        numbersArray.splice(numbersArray.indexOf(element), 1, "Beep!");
+        numbersArray.splice(numbersArray.indexOf(element), 1, "Beep!"); 
       }
     });
   }
-  return numbersArray;
+  return numbersArray.join(", ");
 }
 
 

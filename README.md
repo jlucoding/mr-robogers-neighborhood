@@ -16,9 +16,9 @@ Test: "It should return an array of numbers in string form from 0 to the user's 
 Code: robogerSays(13)
 Expected Output: ["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9", "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]
 
-Test:
-Code:
-Expected Output:
+Test: "It should join the array into a string."
+Code: robogerSays(5)
+Expected Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5"
 
 Test:
 Code:
