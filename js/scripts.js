@@ -13,7 +13,7 @@ function robogerSays(text) {
   }
 
   if (!Number(text)) {
-    return "I only understand one number regardless of the number of digits...";
+    return "I can only understand a number regardless of the number of digits...";
   }
 
   let numbersArray = [];
@@ -32,14 +32,10 @@ function robogerSays(text) {
   return numbersArray.join(", ");
 }
 
-
-
-// UI logic
-
 $(document).ready(function() {
   $("form#main").submit(function(event) {
   event.preventDefault();
   const text = $("#numbers").val();
-  $("#response").html();
+  $("#response").html(`Mr. Roboger says, "${robogerSays(text)}."`);
   });
 });

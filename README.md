@@ -26,4 +26,4 @@ Expected Output: "I do not understand your silence..."
 
 Test: "If user submits words or letters or a combination of numbers separated by space or punctuation, it should return "I only understand numbers...""
 Code: robogerSays("this is a word")
-Expected Output: "I only understand one number regardless of the number of digits...";
+Expected Output: "I can only understand a number regardless of the number of digits...";
