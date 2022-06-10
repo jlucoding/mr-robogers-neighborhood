@@ -1,6 +1,3 @@
-// Utility logic
-
-
 function noInputtedWord() {
   for (let i=0; i < arguments.length; i++) {
     if (arguments[i].trim().length === 0) {
@@ -10,13 +7,13 @@ function noInputtedWord() {
   return false;
 }
 
-
-// Business logic
-
-
 function robogerSays(text) {
   if (noInputtedWord(text)) {
     return "I do not understand your silence...";
+  }
+
+  if (!Number(text)) {
+    return "I only understand one number regardless of the number of digits...";
   }
 
   let numbersArray = [];
