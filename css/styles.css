@@ -1,7 +1,7 @@
 body {
   background-color: rgba(0, 0, 0, 0.842);
   color: aliceblue;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 h1 {
@@ -11,4 +11,13 @@ h1 {
 #response {
   color: rgb(0, 217, 255);
   font-size: 45px;
+}
+
+.btn {
+  display: block;
+  color: rgba(0, 0, 0, 0.842);
+  font-size: 25px;
+  margin: 5px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
