@@ -17,10 +17,14 @@ function robogerSays(text) {
   let numbersArray = [];
   for (let i=0; i <= text; i++) {
     numbersArray.push(i);
+    numbersArray.forEach(function(element) {
+      if (element === 1) {
+        numbersArray.splice(numbersArray.indexOf(element), 1, "Beep!")
+      }
+    });
   }
   return numbersArray;
 }
-
 
 
 
