@@ -35,7 +35,7 @@ function robogerSays(text) {
 $(document).ready(function() {
   $("form#main").submit(function(event) {
   event.preventDefault();
-  const text = $("#numbers").val();
+  const text = $("#input").val();
   $("#response").html(`Mr. Roboger says, "${robogerSays(text)}."`);
   });
 });

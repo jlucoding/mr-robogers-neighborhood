@@ -1,3 +1,40 @@
+# Mr. Roboger's Neighborhood
+
+#### By Jonathan Lu
+
+#### The web application simply takes a whole number that the user inputs and gives a response from Mr. Roboger.
+
+## Technologies Used
+
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* JQuery
+* Markdown
+
+## Description
+
+This is a fun web application that takes the user input into a string, or a sentence you might say. The application captures user input and turn that number into a list of numbers starting from 0 up to the number user inputted. Mr. Roboger is also programmed to substitude numbers (from the list) containing the number 1, number 2, and number 3 into the only three things that he has learned how to say.
+
+## Setup/Installation Requirements
+
+* Clone the project from my repository to your computer
+* Open index.html
+* Input a whole number, but you can also input something else if you wish to
+* Click the "See Mr. Roboger's response!" button
+* Enjoy what Mr. Roboger has to say
+
+## Known Bugs
+
+* None observed
+
+## License
+
+Copyright (c) June 2022. Jonathan Lu
+
+## Test-Driven Development
+
 Describe: robogerSays()
 
 Test: "It should return an array of numbers in string form from 0 to the user's inputted number"
