@@ -13,13 +13,18 @@ function noInputtedWord() {
 
 // Business logic
 
+
 function robogerSays(text) {
   let numbersArray = [];
-  for (let i=0; i <= text; i++) {
-    numbersArray.push(i);
+  for (let i=0; i <= parseInt(text); i++) {
+    numbersArray.push(i.toString());
     numbersArray.forEach(function(element) {
-      if (element === 1) {
-        numbersArray.splice(numbersArray.indexOf(element), 1, "Beep!")
+      if (element.includes("3")) {
+        numbersArray.splice(numbersArray.indexOf(element), 1, "Won't you be my neighbor?");
+      } else if (element.includes("2")) {
+        numbersArray.splice(numbersArray.indexOf(element), 1, "Boop!");
+      } else if (element.includes("1")) {
+        numbersArray.splice(numbersArray.indexOf(element), 1, "Beep!");
       }
     });
   }
@@ -28,31 +33,12 @@ function robogerSays(text) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // UI logic
 
 $(document).ready(function() {
-  $("form#survey").submit(function(event) {
+  $("form#main").submit(function(event) {
   event.preventDefault();
-  const numbers = $("#numbers").val();
+  const text = $("#numbers").val();
   $("#response").html();
   });
 });
